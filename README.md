@@ -1,16 +1,31 @@
-### Hi there 👋
+# SnowyJS, snowy.js is a package that make it possible to startup a nodejs ( discord.js ) project within a few seconds.
 
-<!--
-**snowyjs/SnowyJS** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+# TypeScript / NodeJS / Discord.js Usage:
+```js
+const { botready, snowyjs, ping, math } = require("snowyjs");
+const discord = require("discord.js");
+const fs = require("fs");
+const ms = require("ms")
 
-Here are some ideas to get you started:
+const bot = new discord.Client();
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+bot.on("ready", () => {
+  botready();
+  snowyjs();
+});)
+
+bot.on('message', msg => {
+  if (msg.content === 'ping') {
+    msg.reply('pong');
+    ping();
+  }
+});
+
+bot.on('message', msg => {
+  if (msg.content === 'math') {
+      var answer = math(args[0], args[1])
+    msg.reply(answer);
+  }
+});
+
+bot.login('BOT TOKEN HERE');
