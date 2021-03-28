@@ -12,7 +12,7 @@ const bot = new discord.Client();
 bot.on("ready", () => {
   botready();
   snowyjs();
-});)
+});
 
 bot.on('message', msg => {
   if (msg.content === 'ping') {
