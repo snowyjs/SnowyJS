@@ -1,0 +1,23 @@
+{
+  "name": "snowyjs",
+  "version": "1.2.7",
+  "description": "This is a package that makes it easier to code with discord.js and get your bot online",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "snowy",
+    "snow",
+    "snowyjs",
+    "snowy.js",
+    "playbots",
+    "play",
+    "bots",
+    "playmeme",
+    "playaway",
+    "pgiveaways"
+  ],
+  "author": "Snowy",
+  "license": "ISC"
+}
